@@ -2,14 +2,19 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="style/NIGS.css">
 		<script type="text/javascript" src="scripts/jquery-1.5.2.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			$("button").click(function(){
+				$("img").hide();
+				});
+		});
+		</script>
 		<title>Heart Angela Canteen Delivery System</title>
 	</head>
 	<body>
-		<div>
+		<div class="center">
 		<img src="images/Untitled-1.jpg" alt="Heart Angela Canteen Delivery System"/>
-		<h1>{% block title %}Title Page{% endblock %}</h1>
-			{% block content %}
-			{% endblock  %}
+		<button type="button">Next</button>
 		</div>
 	</body>
 </html>

@@ -18,7 +18,7 @@ class cuisine (models.Model):
     c_name = models.CharField(max_length=50,null=False)
     
     def __unicode__(self):
-        return unicode((self.cat_name))
+        return unicode((self.c_name))
     
 class category (models.Model):
     cat_name = models.CharField(max_length=50,null=False)
